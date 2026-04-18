@@ -1,0 +1,39 @@
+name: CI — Sistema Contable P1SC08
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    name: Build & Run Unit Tests
+    runs-on: windows-latest
+
+    steps:
+      - name: 📥 Checkout código
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: 📦 Restore NuGet packages
+        run: nuget restore P1SC08.sln
+
+      - name: 🔨 Build Solution (Release)
+        run: msbuild P1SC08.sln /p:Configuration=Release /p:Platform="Any CPU"
+
+      - name: 🧪 Run Unit Tests
+        run: |
+          vstest.console.exe "P1SC08.Tests\bin\Release\P1SC08.Tests.dll" `
+            /logger:trx `
+            /ResultsDirectory:TestResults
+
+      - name: 📊 Publicar resultados de pruebas
+        uses: dorny/test-reporter@v1
+        if: always()
+        with:
+          name: MSTest Results
+          path: TestResults/*.trx
+          reporter: dotnet-trx
