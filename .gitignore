@@ -1,0 +1,74 @@
+# ============================================================
+# .gitignore — Sistema Contable P1SC08
+# C# / .NET Framework 4.8 / Windows Forms / Visual Studio 2022
+# ============================================================
+
+# ── Binarios compilados ─────────────────────────────────────
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ── Visual Studio ───────────────────────────────────────────
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.booproj
+
+# ── NuGet ───────────────────────────────────────────────────
+*.nupkg
+*.snupkg
+**/[Pp]ackages/
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ── Archivos de pruebas ─────────────────────────────────────
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+_CodeCoverageReport/
+coverage*/
+
+# ── ReSharper ───────────────────────────────────────────────
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ── Sistema Operativo ────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ── Credenciales y configuración sensible ───────────────────
+# NUNCA subir cadenas de conexión reales
+appsettings.Production.json
+secrets.json
+*.pfx
+*.p12
+
+# ── Archivos temporales ─────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
