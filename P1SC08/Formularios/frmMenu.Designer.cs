@@ -181,7 +181,7 @@ namespace P1SC08
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::P1SC08.Properties.Resources.point_of_sale_icon_resized;
+            //this.pictureBox1.Image = global::P1SC08.Properties.Resources.point_of_sale_icon_resized;
             this.pictureBox1.Location = new System.Drawing.Point(396, 280);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";

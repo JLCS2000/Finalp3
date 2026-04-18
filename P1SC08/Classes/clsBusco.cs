@@ -10,7 +10,7 @@ namespace P1SC08
     // ─────────────────────────────────────────────────────────────────
     public class cnn
     {
-        public static string db = @"Data Source=localhost;Initial Catalog=DBpractica04;Integrated Security=true;";
+        public static string db = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DBpractica04;Integrated Security=true;";
     }
 
     // ─────────────────────────────────────────────────────────────────

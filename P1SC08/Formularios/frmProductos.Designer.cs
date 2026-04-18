@@ -1,4 +1,4 @@
-﻿namespace P1SC08.Formularios
+﻿namespace P1SC08
 {
     partial class frmProductos
     {
@@ -35,22 +35,22 @@
             this.button4 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.txtVenta = new System.Windows.Forms.TextBox();
             this.txtCosto = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -140,125 +140,25 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registrar";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // label2
+            // button5
             // 
-            this.label2.BackColor = System.Drawing.Color.SkyBlue;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(11, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Codigo de Producto";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.button5.Location = new System.Drawing.Point(527, 77);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(64, 26);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "...";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // tabPage2
+            // textBox9
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(766, 398);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Codigo de Barra";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.SkyBlue;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(11, 116);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(337, 28);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Descripcion";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.SkyBlue;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(11, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(337, 28);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Precio de Venta";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.SkyBlue;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(11, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 28);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Cantidad de Existencia";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.SkyBlue;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(11, 192);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(337, 28);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Costo de Producto";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.SkyBlue;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(11, 270);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(337, 28);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Porciento de Impuesto a Pagar";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.SkyBlue;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(11, 309);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(337, 28);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Codigo de Barra Producto";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(355, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 20);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(355, 116);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(635, 20);
-            this.txtDescripcion.TabIndex = 10;
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(355, 154);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(169, 20);
-            this.txtCantidad.TabIndex = 11;
+            this.textBox9.Location = new System.Drawing.Point(355, 309);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(169, 20);
+            this.textBox9.TabIndex = 15;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox4
             // 
@@ -282,23 +182,124 @@
             this.txtCosto.TabIndex = 12;
             this.txtCosto.TextChanged += new System.EventHandler(this.txtCosto_TextChanged);
             // 
-            // textBox9
+            // txtCantidad
             // 
-            this.textBox9.Location = new System.Drawing.Point(355, 309);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(169, 20);
-            this.textBox9.TabIndex = 15;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            this.txtCantidad.Location = new System.Drawing.Point(355, 154);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(169, 20);
+            this.txtCantidad.TabIndex = 11;
             // 
-            // button5
+            // txtDescripcion
             // 
-            this.button5.Location = new System.Drawing.Point(527, 77);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(64, 26);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.txtDescripcion.Location = new System.Drawing.Point(355, 116);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(635, 20);
+            this.txtDescripcion.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(355, 79);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(169, 20);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.SkyBlue;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(11, 309);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(337, 28);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Codigo de Barra Producto";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.SkyBlue;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(11, 270);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(337, 28);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Porciento de Impuesto a Pagar";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.SkyBlue;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(11, 192);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(337, 28);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Costo de Producto";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.SkyBlue;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(11, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(337, 28);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Cantidad de Existencia";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.SkyBlue;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(11, 230);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(337, 28);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Precio de Venta";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.SkyBlue;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(11, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(337, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Descripcion";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.SkyBlue;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(11, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(337, 28);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Codigo de Producto";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1122, 398);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Codigo de Barra";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // frmProductos
             // 
@@ -313,6 +314,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmProductos";
             this.Text = "frmProductos";
+            this.Load += new System.EventHandler(this.frmProductos_Load_1);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

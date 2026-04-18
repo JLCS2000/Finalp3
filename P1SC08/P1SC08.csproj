@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -52,6 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\frmStarts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVENPROD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVENPROD.Designer.cs">
+      <DependentUpon>frmVENPROD.cs</DependentUpon>
+    </Compile>
+        
+    <Compile Include="Formularios\frmStarts.Designer.cs"><DependentUpon>frmStarts.cs</DependentUpon></Compile>
+    <Compile Include="Formularios\frmMenu.cs"><SubType>Form</SubType></Compile>
+    <Compile Include="Formularios\frmMenu.Designer.cs"><DependentUpon>frmMenu.cs</DependentUpon></Compile>
     <Compile Include="Formularios\frmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,7 +72,15 @@
       <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Classes\clsBusco.cs" />
+    <Compile Include="Classes\ConvertImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+	<EmbeddedResource Include="Formularios\frmStarts.resx">
+    <DependentUpon>frmStarts.cs</DependentUpon>
+	</EmbeddedResource>
+	<EmbeddedResource Include="Formularios\frmMenu.resx">
+    <DependentUpon>frmMenu.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,8 +107,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Classes\" />
     <Folder Include="Reportes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
+
+
