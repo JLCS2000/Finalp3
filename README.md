@@ -173,6 +173,6 @@ dotnet test P1SC08.Tests/P1SC08.Tests.csproj
 
 ## 👤 Autor
 
-**[Tu Nombre]** — Desarrollador, QA e Implementador  
+JORGE CORDERO 2018-7044 — Desarrollador, QA e Implementador  
 Proyecto Final — Programación / Sistemas  
-ITLA — 2025
+ITLA — 2026
